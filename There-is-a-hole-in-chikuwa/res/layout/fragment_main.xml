@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ 
+    tools:context="com.example.there_is_a_hole_in_chikuwa.MainActivity$PlaceholderFragment" >
+       
+    <com.example.there_is_a_hole_in_chikuwa.MyView
+        android:id="@+id/MyView1"
+        android:layout_width="500dp"
+        android:layout_height="500dp" />
+    
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+           
+            <TextView
+   				android:id="@+id/TextViewAX"
+      			android:layout_width="wrap_content"
+     			android:layout_height="wrap_content"
+    			android:text="" />
+             	 
+            <TextView
+       			android:id="@+id/TextViewAY"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+        		android:text="" />
+ 
+</LinearLayout>
