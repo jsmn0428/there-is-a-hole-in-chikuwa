@@ -24,7 +24,7 @@ public class Ball implements Drawable{
 	      y = ((float)(10.0D + (500.0F - 2.0F * r) * Math.random()));
 	      check = checkArea(x, y);
 	  }
-	  color = (0xFF000000
+	  color = (0xff000000
 			  | (int)(127 + 128 * Math.random()) << 16
 			  | (int)(64 * Math.random()) << 8
 			  | (int)(255 * Math.random()) << 0);

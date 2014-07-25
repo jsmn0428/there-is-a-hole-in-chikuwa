@@ -59,13 +59,13 @@ public class LawsOfPhysics implements SensorEventListener{
   //@Override
   public void onSensorChanged(SensorEvent event) {
 		if(event.sensor.getType() == Sensor.TYPE_ACCELEROMETER){
-			ax = -0.5f * event.values[0];
-			ay = 0.5f * event.values[1];
+			ax = -1f * event.values[0];
+			ay = 1f * event.values[1];
 		}
   }
   
   public void update(float interval){
-    Ball[] balls = (Ball[])ballList.toArray(new Ball[0]); 
+    Ball[] balls = ballList.toArray(new Ball[0]); 
     for(int i = 0;i < balls.length-1; i++){
     	for(int j = i+1; j < balls.length;j++){
           if (distance(balls[i], balls[j]) < balls[i].r + balls[j].r){
@@ -88,6 +88,7 @@ public class LawsOfPhysics implements SensorEventListener{
             }
           }
         }
+    }
     for(Ball ball:ballList){
     	ball.vx += interval * ax;
         ball.vy += interval * ay;
@@ -106,7 +107,6 @@ public class LawsOfPhysics implements SensorEventListener{
     	for(Ball ball:deleteList){
     		myView.deleteBall(ball);
     	}
-    }
     }
   }
 }

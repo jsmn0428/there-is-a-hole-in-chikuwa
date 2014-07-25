@@ -76,10 +76,7 @@ public class MyView
     holes.add(hole2);
     holes.add(hole3);
     holes.add(hole4);
-    newBall();
-    newBall();
-    newBall();
-    newBall();
+    for(int i=0;i<10;i++) newBall();
     timer = new Timer();
     timer.schedule(new TimerTask(){
       Runnable thread = new Runnable(){
